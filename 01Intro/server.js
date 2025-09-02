@@ -10,7 +10,10 @@ console.log(global)
 
 const os = require('os')
 const path = require('path')
+
 const math = require("./math")
+// another way
+// const {add, subtract, multiply, divide} = require("./math")
 
 
 console.log(os.type())
@@ -18,14 +21,26 @@ console.log(os.version())
 console.log(os.homedir())
 
 console.log(__dirname)
+// E:\iLearning\Youtube\DaveGray\NodeJS\01Intro
 console.log(__filename)
+// E:\iLearning\Youtube\DaveGray\NodeJS\01Intro\server.js
 
 console.log("--------------------------------")
 
 console.log(path.dirname(__filename))
+// E:\iLearning\Youtube\DaveGray\NodeJS\01Intro
 console.log(path.basename(__filename))
+// server.js
 console.log(path.extname(__filename))
+// .js
 
 console.log(path.parse(__filename))
+// {
+//   root: 'E:\\',
+//   dir: 'E:\\iLearning\\Youtube\\DaveGray\\NodeJS\\01Intro',
+//   base: 'server.js',
+//   ext: '.js',
+//   name: 'server'
+// }
 
 console.log(math.add(2, 3))
