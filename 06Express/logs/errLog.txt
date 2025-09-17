@@ -1,1 +1,5 @@
 20250916	16:58:55	0f33cabd-38a4-45e5-a31c-93685a0d137b	Error: not allowed by CORS
+20250917	11:34:56	d289506b-b32a-4db8-9378-503842388411	Error: ENOENT: no such file or directory, stat 'E:\iLearning\Youtube\DaveGray\NodeJS\06Express\routes\views\index.html'
+20250917	11:34:56	e8a1853e-4433-4589-b13d-5e6c34bbc9a4	Error: ENOENT: no such file or directory, stat 'E:\iLearning\Youtube\DaveGray\NodeJS\06Express\routes\views\index.html'
+20250917	11:35:08	10914e46-971f-4176-b595-5e5124ee5aa4	Error: ENOENT: no such file or directory, stat 'E:\iLearning\Youtube\DaveGray\NodeJS\06Express\routes\views\index.html'
+20250917	11:35:31	79e4a709-1217-4f84-9d52-4796e993bb43	Error: ENOENT: no such file or directory, stat 'E:\iLearning\Youtube\DaveGray\NodeJS\06Express\routes\views\index.html'
