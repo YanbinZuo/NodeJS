@@ -1,8 +1,24 @@
-20250904	11:08:01	33b996f6-fd4d-4d56-ae96-20f8ea672b7e	/new-page.html	GET
-20250904	11:08:01	986bf217-ac0f-4f16-a627-01d1b12b5fe8	/css/style.css	GET
-20250904	11:08:01	1541d0f1-37cf-4007-a841-91502d27fafc	/img/img1.jpg	GET
-20250904	11:08:02	75e8d2bf-57e8-461d-84ee-36a5de7e6829	/favicon.ico	GET
-20250904	11:08:20	4da2110f-93bd-4c72-a214-539ac3837a87	/new-page.html	GET
-20250904	11:08:34	d86c417f-3768-4e16-a5dd-62e1220ac146	/new-page.html	GET
-20250904	11:08:34	badc1fca-446c-46c4-b59c-a758ab70f058	/img/img1.jpg	GET
-20250904	11:08:34	516b7d80-a804-4e36-801e-ec6f61bf00f5	/css/style.css	GET
+20250916	15:50:45	25ab6091-905a-44d3-a92f-771c4091aa08	GET	undefined	/
+20250916	15:50:45	2929947c-f2b9-44dd-b0d3-69a10bc27761	GET	undefined	/css/style.css
+20250916	15:53:12	b634e22a-4ebb-4deb-90f3-b7bbc33872e5	GET	undefined	/
+20250916	15:53:12	8d26a054-2758-454e-bce9-373530808060	GET	undefined	/css/style.css
+20250916	15:55:18	e687d556-2cfd-41bc-8633-3b98ca68deb0	GET	undefined	/
+20250916	15:56:00	e472518a-d0c1-420e-b645-74034bab8d29	GET	undefined	/
+20250916	15:56:57	3c0cbf6c-35ae-4dc6-af70-31daaf6fb166	GET	https://www.google.com	/
+20250916	16:03:34	4d75e9e2-ab21-4d33-a935-02616da7a0c4	GET	https://www.google.com	/
+20250916	16:19:26	6ce303e9-1633-4bc4-97e9-78edcaf03c00	GET	https://www.google.com	/
+20250916	16:19:56	24faae11-2fdc-4998-a3db-0a78cb4f73dc	GET	https://www.google.com	/
+20250916	16:20:14	d7fffd80-a53f-40a7-aa27-7a2d25c67796	GET	https://www.google.com	/
+20250916	16:20:17	4fcd7018-4a76-4155-b844-0b7ad4399e79	GET	https://www.google.com	/
+20250916	16:39:08	d05cca7c-bd85-4f66-9a60-12963ba8ba5a	GET	undefined	/
+20250916	16:39:24	8907ace3-0eb1-4b70-968e-f96c0c3a8d8a	GET	undefined	/
+20250916	16:39:24	dd3ad5b7-5914-4547-a378-e35bca95a4b1	GET	undefined	/css/style.css
+20250916	16:58:55	5de48941-ac73-4a7e-80b3-e986120d322d	GET	undefined	/
+20250916	16:59:29	23872a3a-7afc-4c3c-904d-1e708dc205bb	GET	undefined	/
+20250916	16:59:29	fd630a5c-937f-45a6-8c70-ec5d5b261547	GET	undefined	/css/style.css
+20250916	17:03:21	0ea5dd7f-f9ad-4e5d-90f0-5463db5e8d63	GET	undefined	/dsaf
+20250916	17:03:21	e3fb40e6-e338-40ff-aeb8-3daba1c9ffd3	GET	undefined	/css/style.css
+20250916	17:08:12	edbc26f9-6143-4a55-936a-bfea702c9674	GET	undefined	/dsaf
+20250916	17:08:12	f30e0ed0-2b86-4940-a504-a1fe6e6a0960	GET	undefined	/css/style.css
+20250916	17:08:13	0dd59534-fbcd-4210-8b03-8f1757d03a60	GET	undefined	/dsaf
+20250916	17:08:13	b6c292d0-a710-4f59-bc60-dfddc062c562	GET	undefined	/css/style.css
