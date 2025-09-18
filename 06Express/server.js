@@ -4,28 +4,13 @@ const cors = require("cors");
 const path = require("path");
 const { logEvents, logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
+const corsOptions = require("./config/corsOptions");
 const PORT = process.env.PORT || 3500;
 
 // custom middleware logger
 app.use(logger);
 
 // Cross Origin Resource Sharing
-const whitelist = [
-  "https://yoursite.com",
-  "https://www.google.com",
-  "http://127.0.0.1:5500",
-  "http://localhost:3500",
-];
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("not allowed by CORS"));
-    }
-  },
-  optionsSuccessStatus: 200,
-};
 app.use(cors(corsOptions));
 
 // built-in middleware to handle urlencoded data
@@ -44,6 +29,7 @@ app.use("/subdir", express.static(path.join(__dirname, "/public")));
 // routes
 app.use("/", require("./routes/root"));
 app.use("/subdir", require("./routes/subdir"));
+app.use("/employees", require("./routes/api/employees"));
 
 // need to use real regexp
 app.all(/.*/, (req, res) => {
