@@ -3,3 +3,9 @@
 20250917	11:34:56	e8a1853e-4433-4589-b13d-5e6c34bbc9a4	Error: ENOENT: no such file or directory, stat 'E:\iLearning\Youtube\DaveGray\NodeJS\06Express\routes\views\index.html'
 20250917	11:35:08	10914e46-971f-4176-b595-5e5124ee5aa4	Error: ENOENT: no such file or directory, stat 'E:\iLearning\Youtube\DaveGray\NodeJS\06Express\routes\views\index.html'
 20250917	11:35:31	79e4a709-1217-4f84-9d52-4796e993bb43	Error: ENOENT: no such file or directory, stat 'E:\iLearning\Youtube\DaveGray\NodeJS\06Express\routes\views\index.html'
+20250921	13:38:04	5e3e61f3-ee29-4bf0-8949-789777bee45a	TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+20250921	23:04:52	1f2ce25f-7a09-4cd1-8290-50f267140e13	Error: Cannot set headers after they are sent to the client
+20250921	23:05:30	7f8883bb-5030-4aff-b0a3-a3de92ce764d	Error: Cannot set headers after they are sent to the client
+20250921	23:05:47	c7133ce6-21b1-4b0a-872c-a18c2fcc9739	Error: Cannot set headers after they are sent to the client
+20250921	23:07:47	d435c236-fb4a-449b-b63f-56be42fed5c3	Error: Cannot set headers after they are sent to the client
+20250921	23:08:52	cc8728c8-374f-456c-b2a5-79ef81de2863	Error: Cannot set headers after they are sent to the client
