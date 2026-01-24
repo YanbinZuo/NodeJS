@@ -15,6 +15,7 @@ const math = require("./math");
 // another way
 // const {add, subtract, multiply, divide} = require("./math")
 
+console.log("---------------------------------------");
 console.log(os.type());
 console.log(os.version());
 console.log(os.homedir());
@@ -24,7 +25,7 @@ console.log(__dirname);
 console.log(__filename);
 // E:\iLearning\Youtube\DaveGray\NodeJS\01Intro\server.js
 
-console.log("--------------------------------");
+console.log("---------------------------------------");
 
 console.log(path.dirname(__filename));
 // E:\iLearning\Youtube\DaveGray\NodeJS\01Intro
