@@ -1,4 +1,9 @@
 node_modules
 .env
+
 logs/
 model/
+
+# ! means exception (do NOT ignore this file).
+!logs/.gitkeep
+!model/.gitkeep
