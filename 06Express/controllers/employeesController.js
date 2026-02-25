@@ -30,7 +30,7 @@ const createNewEmployee = async (req, res) => {
   data.setEmployees([...data.employees, newEmployee]);
   await fsPromises.writeFile(
     path.join(__dirname, "..", "model", "employees.json"),
-    JSON.stringify(data, null, 2),
+    JSON.stringify(data.employees, null, 2),
   );
   res.status(201).json(data.employees);
 };

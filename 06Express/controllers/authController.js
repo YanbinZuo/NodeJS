@@ -27,11 +27,21 @@ const handleLogin = async (req, res) => {
     if (!match) {
       return res.sendStatus(401);
     }
+    // EXample: roles:  [ 3, 2, 1 ]
+    const rolesKeys = Object.values(foundUser.roles);
     // create JWTs
+    // We use "userInfo" as a different name space and that is good because this
+    // is considered to be a private jwt claim because there are some reserved
+    // abbreviations and words for public jwt claims
     const accessToken = jwt.sign(
-      { username: foundUser.username },
+      {
+        userInfo: {
+          username: foundUser.username,
+          roles: rolesKeys,
+        },
+      },
       process.env.ACCESS_TOKEN_SECRET,
-      { expiresIn: "30s" },
+      { expiresIn: "5m" },
     );
     const refreshToken = jwt.sign(
       { username: foundUser.username },
