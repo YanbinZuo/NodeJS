@@ -1,15 +1,14 @@
-const usersDB = {
-  users: require("../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
-
+// const usersDB = {
+//   users: require("../model/users.json"),
+//   setUsers: function (data) {
+//     this.users = data;
+//   },
+// };
+const User = require("../model/User");
 const bcrypt = require("bcrypt");
-
 const jwt = require("jsonwebtoken");
-const fsPromises = require("fs").promises;
-const path = require("path");
+// const fsPromises = require("fs").promises;
+// const path = require("path");
 
 const handleLogin = async (req, res) => {
   try {
@@ -19,7 +18,8 @@ const handleLogin = async (req, res) => {
         .status(400)
         .json({ message: "Username and password are required!" });
     }
-    const foundUser = usersDB.users.find((user) => user.username === username);
+    // const foundUser = usersDB.users.find((user) => user.username === username);
+    const foundUser = await User.findOne({ username }).exec();
     if (!foundUser) return res.sendStatus(401); //Unauthorized
     // evaluate password
     const match = await bcrypt.compare(password, foundUser.password);
@@ -50,15 +50,19 @@ const handleLogin = async (req, res) => {
     // Saving refreshToken with current user
     // doing this will allow us to invalidate that refreshToken as the current
     // user logs out before their one day has expired
-    const otherUsers = usersDB.users.filter(
-      (person) => person.username !== foundUser.username,
-    );
-    const currentUser = { ...foundUser, refreshToken };
-    usersDB.setUsers([...otherUsers, currentUser]);
-    await fsPromises.writeFile(
-      path.join(__dirname, "..", "model", "users.json"),
-      JSON.stringify(usersDB.users, null, 2),
-    );
+    foundUser.refreshToken = refreshToken;
+    const result = await foundUser.save();
+    console.log(result);
+
+    // const otherUsers = usersDB.users.filter(
+    //   (person) => person.username !== foundUser.username,
+    // );
+    // const currentUser = { ...foundUser, refreshToken };
+    // usersDB.setUsers([...otherUsers, currentUser]);
+    // await fsPromises.writeFile(
+    //   path.join(__dirname, "..", "model", "users.json"),
+    //   JSON.stringify(usersDB.users, null, 2),
+    // );
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
       sameSite: "None",
